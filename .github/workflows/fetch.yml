@@ -10,6 +10,6 @@ on:
 
 jobs:
   fetch-definitions:
-    uses: aardorphean/mushclient-client-declarations/.github/workflows/fetch_mushclient_definitions.yml@master
+    uses: aardorphean/mushclient-client-declarations/.github/workflows/fetch_mushclient_definitions.yml@main
     secrets:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
