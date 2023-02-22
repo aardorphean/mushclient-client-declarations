@@ -25,12 +25,12 @@ jobs:
 
       - name: Build
         run: |
-          npm build
+          npm run build
 
       - name: Fetch Mushclient Defintions
         id: fetch
         run: |
-          npm start
+          npm run start
 
       - uses: actions/upload-artifact@v2
         with:
