@@ -3,7 +3,7 @@ name: Fetch
 on:
   push:
     branches:
-      - master
+      - main
     paths:
       - "src/**"
   workflow_dispatch:
