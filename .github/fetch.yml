@@ -1,0 +1,15 @@
+name: Fetch
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - "src/**"
+  workflow_dispatch:
+
+jobs:
+  fetch-definitions:
+    uses: aardorphean/mushclient-client-declarations/.github/workflows/fetch_mushclient_definitions.yml@master
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
