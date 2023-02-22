@@ -11,8 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Excute
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/cache@v2
+      - uses: actions/checkout@v3
+      - uses: actions/cache@v3
         id: npm-cache
         with:
           path: "./node_modules"
@@ -32,7 +32,7 @@ jobs:
         run: |
           npm run start
 
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: mushclient_definitions
           path: ./mushclient_definitions.lua
